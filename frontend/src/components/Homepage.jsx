@@ -248,7 +248,7 @@ const Homepage = () => {
     const formData = { email: loginEmail, password: loginPassword };
 
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://resumebuilder-o8pi.vercel.app/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -277,7 +277,7 @@ const Homepage = () => {
     const formData = { email: registerEmail, password: registerPassword };
 
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('https://resumebuilder-o8pi.vercel.app/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
