@@ -29,7 +29,7 @@ const Homepg = () => {
     const formData = { email: loginEmail, password: loginPassword };
 
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://resumebuilder-o8pi.vercel.app/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const Homepg = () => {
     const formData = { email: registerEmail, password: registerPassword };
 
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('https://resumebuilder-o8pi.vercel.app/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ const Homepg = () => {
 
 
     try {
-      const response = await fetch('http://localhost:5000/reviewpg-homepg', {
+      const response = await fetch('https://resumebuilder-o8pi.vercel.app/reviewpg-homepg', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ const Homepg = () => {
     const fetchReviews = async () => {
       try {
         
-        const response = await fetch('http://localhost:5000/reviews'); 
+        const response = await fetch('https://resumebuilder-o8pi.vercel.app/reviews'); 
         const data = await response.json();
         setReviews(data.reviews);
       } catch (error) {
